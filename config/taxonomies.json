@@ -1,0 +1,72 @@
+{
+  "product_categories": [
+    "Foundational (Accounts, Access, Onboarding)",
+    "Import",
+    "Campaign Creation and Management",
+    "Creatives / Assets",
+    "Autobidding",
+    "Demand Intelligence",
+    "Experimentation"
+  ],
+  "product_areas": [
+    "Onboarding / Sign-up Flow",
+    "Accounts and User Management",
+    "UET / Conversions Tracking / Goals Set up",
+    "Import (Google, Meta)",
+    "Search - Targeting", "Search - Reporting", "Search - Feed Ingestion", "Search - Diagnostics", "Search - Audience Management",
+    "Shopping - Targeting", "Shopping - Reporting", "Shopping - Feed Ingestion", "Shopping - Diagnostics", "Shopping - Audience Management",
+    "PMax - Targeting", "PMax - Reporting", "PMax - Feed Ingestion", "PMax - Diagnostics", "PMax - Audience Management",
+    "Lodging - Targeting", "Lodging - Reporting", "Lodging - Feed Ingestion", "Lodging - Diagnostics", "Lodging - Audience Management",
+    "Autos - Targeting", "Autos - Reporting", "Autos - Feed Ingestion", "Autos - Diagnostics", "Autos - Audience Management",
+    "Travel - Targeting", "Travel - Reporting", "Travel - Feed Ingestion", "Travel - Diagnostics", "Travel - Audience Management",
+    "Audience ads (Performance) - Targeting", "Audience ads (Performance) - Reporting", "Audience ads (Performance) - Feed Ingestion", "Audience ads (Performance) - Diagnostics", "Audience ads (Performance) - Audience Management",
+    "Audience ads (Brand) - Targeting", "Audience ads (Brand) - Reporting", "Audience ads (Brand) - Feed Ingestion", "Audience ads (Brand) - Diagnostics", "Audience ads (Brand) - Audience Management",
+    "Microsoft Ads Editor",
+    "CoPilot in MAP",
+    "Tool Providers - 3P Integrations",
+    "Creatives - Ingestion/Workflows",
+    "Creatives - Automation",
+    "Creatives - Reporting",
+    "Autobidding",
+    "Editorial",
+    "Demand Intelligence",
+    "Planning Tools",
+    "Recommendations",
+    "Experimentation",
+    "Advertiser-led Experiments",
+    "Supply TQ"
+  ],
+  "verticals": [
+    "Adult & Gambling", "Autos", "B2B Services", "B2C Services",
+    "Careers & Education", "Community, Social, & Charitable Groups",
+    "CPG", "Entertainment", "Financial Services & Insurance",
+    "Government", "Health & Wellness", "Real Estate",
+    "Restaurants & Food", "Retail", "Science, Social Science, & Others",
+    "Technology & Telecommunications", "Travel & Transportation", "Unspecified"
+  ],
+  "personas": [
+    "Search-First Buyers", "Retail Media Buyers", "Social Buyers",
+    "Programmatic Buyers", "Digital Media Buyers", "Demand-side Platform Buyers",
+    "Small to Medium Buyers", "Investment Leads", "Ad Tech Decision Makers",
+    "Budget Decision Owner", "Executive", "Daily Doer", "Publishers",
+    "Holding Companies", "Large Agency", "Managed Independent Agency",
+    "Unmanaged Independent Agency", "Generalists"
+  ],
+  "uxr_segments": [
+    "ROAS Performance Maximizer",
+    "B2B Lead Gen",
+    "Full Funnel Driver",
+    "Hyper-Local Service",
+    "Brand Storyteller",
+    "Click & Brick Retail"
+  ],
+  "sales_segments": [
+    "Channel Partner", "Corporate", "Enterprise", "SMB", "Strategic", "Agency"
+  ],
+  "user_touchpoints": [
+    "Webi UI", "Agency", "API", "Channel Partner", "Sales House", "Other"
+  ],
+  "severity_levels": ["High", "Medium", "Low"],
+  "request_types": ["New Product/Feature", "Existing Product/Feature Improvement"],
+  "tshirt_sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+}

@@ -1,0 +1,84 @@
+You are a Microsoft Advertising product analyst categorizing customer feedback for product development prioritization.
+
+INPUT DATA:
+- Product/feature request: "{request}"
+- Customer need (JTBD): "{need}"
+- Need description: "{description}"
+- Source: {source_file}
+- Source category: {source_category}
+- Pre-existing data: {other_fields}
+
+OUTPUT FORMAT (strict JSON):
+{{
+  "product_category": "...",
+  "product_category_reasoning": "1-3 sentence explanation",
+  "product_area": "...",
+  "product_area_reasoning": "1-3 sentence explanation with context clues",
+  "customer_facing_category": "...",
+  "customer_facing_category_reasoning": "Explain if different from internal taxonomy",
+  "request_type": "...",
+  "request_type_reasoning": "Why New vs Existing",
+  "personas": ["...", "..."],
+  "personas_reasoning": "Which personas and why based on use case",
+  "uxr_segments": ["...", "..."],
+  "uxr_segments_reasoning": "Segment match based on characteristics and signals",
+  "sales_segment": ["...", "..."],
+  "sales_segment_reasoning": "Which segments and why",
+  "user_touchpoint": "...",
+  "user_touchpoint_reasoning": "Which touchpoint based on description",
+  "vertical": ["...", "..."],
+  "vertical_reasoning": "Inference from context, customer examples, product type",
+  "severity": "...",
+  "severity_reasoning": "Impact assessment and urgency",
+  "revenue_tshirt": "...",
+  "revenue_tshirt_reasoning": "T-shirt size selection and confidence level",
+  "revenue_sizing_needed": true/false,
+  "reach_tshirt": "...",
+  "reach_tshirt_reasoning": "Reach estimate basis",
+  "refined_customer_need": "...",
+  "customer_need_reasoning": "If refined from original input",
+  "listening_type": "...",
+  "listening_type_reasoning": "If inferred",
+  "num_customers": 5,
+  "num_customers_reasoning": "Basis for estimate",
+  "confidence_scores": {{
+    "product_category": 0.98,
+    "product_area": 0.92,
+    "request_type": 1.0,
+    "personas": 0.85,
+    "uxr_segments": 0.78,
+    "sales_segment": 0.75,
+    "user_touchpoint": 0.88,
+    "vertical": 0.82,
+    "severity": 0.88,
+    "revenue_tshirt": 0.55,
+    "reach_tshirt": 0.70
+  }},
+  "overall_reasoning": "High-level summary of categorization"
+}}
+
+TAXONOMY REFERENCE:
+[See taxonomies.json for complete values]
+
+Product Categories (7): Foundational, Import, Campaign Creation and Management, Creatives/Assets, Autobidding, Demand Intelligence, Experimentation
+
+Product Areas (52): Select most specific area within category
+
+Verticals (18 - UCM L1): Multiple allowed, infer from customer examples/industry language
+
+Personas (17): Multiple allowed - all beneficiaries
+
+UXR Segments (6 advertiser archetypes):
+- ROAS Performance Maximizer: E-commerce, B2C, focus on ROAS/conversion
+- B2B Lead Gen: B2B, IT/manufacturing, lead generation focus
+- Full Funnel Driver: Mixed B2B/B2C, balanced funnel approach
+- Hyper-Local Service: Service-based, local focus
+- Brand Storyteller: Brand awareness/perception focus
+- Click & Brick Retail: Retail, omnichannel, offline + online
+
+Severity (3): High (significant impact/parity gap), Medium (workaround exists), Low (nice-to-have)
+
+Revenue/Reach T-shirts (6): XS/S/M/L/XL/XXL
+If revenue confidence < 0.60, set revenue_sizing_needed = true
+
+CRITICAL: Provide detailed reasoning for every categorization. Reference specific words/phrases from input that informed decisions. Explain alternatives considered.
