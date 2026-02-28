@@ -38,3 +38,9 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local Google Ads data
+google_ads_data.db
+google_ads_data.db.backup
+*.csv
+google-ads-exports/

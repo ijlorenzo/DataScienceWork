@@ -1,4 +1,37 @@
-# Google Ads MCP Server
+# Google Ads MCP Servers
+
+Query your Google Ads data using natural language through Model Context Protocol (MCP).
+
+## 🚀 Two Versions Available
+
+This repository provides **two MCP servers** - choose the one that fits your needs:
+
+### 🏠 **Local Version** (Recommended for Most Users)
+- ✅ **Simple 5-minute setup** - No OAuth or API tokens needed
+- ✅ **100% local** - Works offline, no cloud API calls
+- ✅ **Fast** - Instant query responses
+- ✅ **Private** - All data stays on your machine
+
+👉 **[Get Started with Local Version](QUICKSTART_LOCAL.md)** | [Full Docs](README_LOCAL.md)
+
+### ☁️ **Cloud API Version** (Advanced - Real-time Data)
+- ✅ **Real-time** - Always up-to-date data
+- ✅ **Automatic** - No manual CSV exports
+- ⚠️ Complex setup - OAuth2, API tokens required
+
+👉 **[Get Started with Cloud Version](QUICKSTART.md)** | [Full Docs - Below](#google-ads-cloud-api-mcp-server)
+
+### 🤔 Not Sure Which to Use?
+
+See **[WHICH_VERSION.md](WHICH_VERSION.md)** for a detailed comparison.
+
+**Quick answer**: If you don't need real-time data and want simple setup, use the **Local Version**.
+
+---
+
+# Google Ads Cloud API MCP Server
+
+> **Note**: This is the **Cloud API version** documentation. For the simpler local version, see [README_LOCAL.md](README_LOCAL.md).
 
 A Model Context Protocol (MCP) server for querying Google Ads data using natural language. This server enables you to retrieve campaign performance, keyword data, search terms, and other Google Ads metrics through simple natural language queries or GAQL (Google Ads Query Language).
 
